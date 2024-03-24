@@ -13,6 +13,10 @@ vim.keymap.set('n', '<c-j>', ':wincmd j<CR>')
 vim.keymap.set('n', '<c-h>', ':wincmd h<CR>')
 vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
 
+
+vim.keymap.set('n', '<leader><Tab>', ':split<CR>')
+vim.keymap.set('n', '<leader><Tab><Tab>', ':vsplit<CR>')
+
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 vim.keymap.set('n','<C-s>',':w!<CR>')
 vim.wo.number = true
