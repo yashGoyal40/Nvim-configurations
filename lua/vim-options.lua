@@ -21,5 +21,16 @@ vim.keymap.set('n', '<leader><Tab><Tab>', ':vsplit<CR>')
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 vim.keymap.set('n','<C-s>',':w!<CR>')
 vim.keymap.set('n','<C-i>',':LiveServerStart<CR>')
+
+vim.keymap.set('n','<M-1>',':BufferLineGoToBuffer 1<CR>')
+vim.keymap.set('n','<M-2>',':BufferLineGoToBuffer 2<CR>')
+vim.keymap.set('n','<M-3>',':BufferLineGoToBuffer 3<CR>')
+vim.keymap.set('n','<M-4>',':BufferLineGoToBuffer 4<CR>')
+vim.keymap.set('n','<M-5>',':BufferLineGoToBuffer 5<CR>')
+vim.keymap.set('n','<M-6>',':BufferLineGoToBuffer 6<CR>')
+vim.keymap.set('n','<M-7>',':BufferLineGoToBuffer 7<CR>')
+vim.keymap.set('n','<M-8>',':BufferLineGoToBuffer 8<CR>')
+vim.keymap.set('n','<M-9>',':BufferLineGoToBuffer 9<CR>')
+
 vim.wo.number = true
 

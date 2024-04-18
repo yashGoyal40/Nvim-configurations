@@ -8,7 +8,7 @@ return {
     },
     config = function()
       vim.hide_dotfiles=0
-      vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal left<CR>", {})
+      vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal right<CR>", {})
 		  vim.keymap.set("n", "<leader>bf", ":Neotree buffers reveal float<CR>", {})
     end
 }
