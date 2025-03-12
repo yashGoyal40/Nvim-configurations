@@ -7,9 +7,37 @@ return {
         "MunifTanjim/nui.nvim",
     },
     config = function()
-      vim.hide_dotfiles=0
-      vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal right<CR>", {})
-		  vim.keymap.set("n", "<leader>bf", ":Neotree buffers reveal float<CR>", {})
+        require("neo-tree").setup({
+            filesystem = {
+                filtered_items = {
+                    visible = true,  
+                    hide_dotfiles = false, 
+                    hide_gitignored = true,
+                },
+            },
+            window = {
+                position = "right",
+                width = 30,
+            },
+            default_component_configs = {
+                git_status = {
+                    symbols = {
+                        added = "✚",
+                        modified = "●",
+                        deleted = "✖",
+                        renamed = "󰁕",
+                        conflict = "",
+                        untracked = "★",
+                        ignored = "◌",
+                        unstaged = "󰄱",
+                        staged = "✓",
+                        unmerged = "",
+                    },
+                },
+            },
+        })
+        vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal right<CR>", {})
+        vim.keymap.set("n", "<leader>bf", ":Neotree buffers reveal float<CR>", {})
     end
 }
 
